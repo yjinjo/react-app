@@ -41,13 +41,10 @@ class App extends Component {
             <a
               href="/"
               onClick={function (e) {
-                console.log('event in', this);
+                console.log(e);
                 e.preventDefault();
-                return;
-                this.setState({
-                  mode: 'welcome',
-                });
-              }}
+                this.setState({ mode: 'welcome' });
+              }.bind(this)}
             >
               {this.state.subject.title}
             </a>

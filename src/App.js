@@ -1,27 +1,11 @@
-// import "./App.css";
-
-import MyHeader from "./MyHeader";
-import Counter from "./Counter";
-import Container from "./Container";
+// import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-  const number = 5;
-
-  const counterProps = {
-    a: 1,
-    b: 2,
-    c: 3,
-    d: 4,
-    e: 5,
-  };
-
   return (
-    <Container>
-      <div>
-        <MyHeader />
-        <Counter {...counterProps} />
-      </div>
-    </Container>
+    <div className="App">
+      <h2>일기장</h2>
+    </div>
   );
 }
 

@@ -1,6 +1,7 @@
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 const Edit = () => {
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const id = searchParams.get("id");
@@ -19,6 +20,21 @@ const Edit = () => {
         }}
       >
         QS 바꾸기
+      </button>
+
+      <button
+        onClick={() => {
+          navigate("/home");
+        }}
+      >
+        HOME으로 가기
+      </button>
+      <button
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        뒤로가기
       </button>
     </div>
   );

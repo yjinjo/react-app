@@ -83,13 +83,13 @@ const DiaryList = ({ diaryList }) => {
             text={"새 일기 쓰기"}
             onClick={() => navigate("/new")}
           />
-          {getProcessedDiaryList().map((it) => (
-            <div key={it.id}>
-              {it.content} {it.emotion}
-            </div>
-          ))}
         </div>
       </div>
+      {getProcessedDiaryList().map((it) => (
+        <div key={it.id}>
+          {it.content} {it.emotion}
+        </div>
+      ))}
     </div>
   );
 };

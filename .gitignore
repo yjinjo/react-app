@@ -78,5 +78,5 @@ Temporary Items
 .ionide
 
 .idea/
-
+.firebase/
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode

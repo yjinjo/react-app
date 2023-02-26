@@ -13,6 +13,11 @@ const Home = () => {
   const headText = `${curDate.getFullYear()}년 ${curDate.getMonth() + 1}월`;
 
   useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = "감정 일기장";
+  }, []);
+
+  useEffect(() => {
     if (diaryList.length >= 1) {
       // 현재 년도와 월의 가장 첫 번째 날을 꺼내옵니다. (이번년도/이번월/1일)
       const firstDay = new Date(

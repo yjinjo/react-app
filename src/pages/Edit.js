@@ -21,6 +21,7 @@ const Edit = () => {
         setOriginDate(targetDiary);
       } else {
         // 해당 diary 가 없을 때,
+        alert("없는 일기입니다.");
         navigate("/", { replace: true });
       }
     }

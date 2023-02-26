@@ -25,7 +25,10 @@ const Home = () => {
       const lastDay = new Date(
         curDate.getFullYear(),
         curDate.getMonth() + 1,
-        0
+        0,
+        23,
+        59,
+        59
       ).getTime();
 
       // 일기 리스트의 날짜가 해당 월 안에 있는 것만 filtering 해서 추가합니다.
